@@ -34,7 +34,7 @@ class AlunoViewController: UIViewController, ImagePickerFotoSelecionada {
     var aluno:Aluno?
     
     // MARK: - View Lifecycle
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.arredondaView()
@@ -94,13 +94,13 @@ class AlunoViewController: UIViewController, ImagePickerFotoSelecionada {
         present(menu, animated: true, completion: nil)
     }
     
-    @IBAction func stepperNota(_ sender: UIStepper) { 
+    @IBAction func stepperNota(_ sender: UIStepper) {
         self.textFieldNota.text = "\(sender.value)"
     }
     
     @IBAction func buttonSalvar(_ sender: UIButton) {
         if aluno == nil {
-            let aluno = Aluno(context: contexto)
+            aluno = Aluno(context: contexto)
         }
         aluno?.nome = textFieldNome.text
         aluno?.endereco = textFieldEndereco.text
@@ -110,7 +110,7 @@ class AlunoViewController: UIViewController, ImagePickerFotoSelecionada {
         aluno?.foto = imageAluno.image
         
         do {
-           try contexto.save()
+            try contexto.save()
             navigationController?.popViewController(animated: true)
         } catch {
             print(error.localizedDescription)
@@ -118,3 +118,4 @@ class AlunoViewController: UIViewController, ImagePickerFotoSelecionada {
     }
     
 }
+
