@@ -22,6 +22,9 @@
 		DE7E62D725A4D7FB002004BF /* MapaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7E62D625A4D7FB002004BF /* MapaViewController.swift */; };
 		DE7E62DA25A4E1A2002004BF /* CalculaMediaAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7E62D925A4E1A2002004BF /* CalculaMediaAPI.swift */; };
 		DE7E62DC25A4EBDF002004BF /* Notificacoes.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7E62DB25A4EBDF002004BF /* Notificacoes.swift */; };
+		DE7E62DE25A4F8EA002004BF /* AutenticacaoLocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7E62DD25A4F8EA002004BF /* AutenticacaoLocal.swift */; };
+		DE7E62E125A5F3B5002004BF /* Pino.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7E62E025A5F3B5002004BF /* Pino.swift */; };
+		DE7E62E425A6211A002004BF /* icon-app.png in Resources */ = {isa = PBXBuildFile; fileRef = DE7E62E325A6211A002004BF /* icon-app.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,9 @@
 		DE7E62D625A4D7FB002004BF /* MapaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapaViewController.swift; sourceTree = "<group>"; };
 		DE7E62D925A4E1A2002004BF /* CalculaMediaAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculaMediaAPI.swift; sourceTree = "<group>"; };
 		DE7E62DB25A4EBDF002004BF /* Notificacoes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Notificacoes.swift; sourceTree = "<group>"; };
+		DE7E62DD25A4F8EA002004BF /* AutenticacaoLocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutenticacaoLocal.swift; sourceTree = "<group>"; };
+		DE7E62E025A5F3B5002004BF /* Pino.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pino.swift; sourceTree = "<group>"; };
+		DE7E62E325A6211A002004BF /* icon-app.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-app.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,7 @@
 				DE7E62D425A4D7D6002004BF /* Mapa */,
 				A28100181FD5C2E300E1BDF1 /* Componentes */,
 				03AA17511FC84154003CB2B8 /* Main.storyboard */,
+				DE7E62E225A620FF002004BF /* Assets */,
 				03AA17571FC84154003CB2B8 /* Assets.xcassets */,
 				03AA17591FC84154003CB2B8 /* LaunchScreen.storyboard */,
 				03AA175C1FC84154003CB2B8 /* Info.plist */,
@@ -138,6 +145,7 @@
 				DE7E62D025A4CB22002004BF /* Mensagem.swift */,
 				DE7E62D225A4D367002004BF /* Localizacao.swift */,
 				DE7E62DB25A4EBDF002004BF /* Notificacoes.swift */,
+				DE7E62DD25A4F8EA002004BF /* AutenticacaoLocal.swift */,
 			);
 			path = Componentes;
 			sourceTree = "<group>";
@@ -145,6 +153,7 @@
 		DE7E62D425A4D7D6002004BF /* Mapa */ = {
 			isa = PBXGroup;
 			children = (
+				DE7E62DF25A5F3A7002004BF /* Model */,
 				DE7E62D525A4D7E6002004BF /* Controller */,
 			);
 			path = Mapa;
@@ -164,6 +173,22 @@
 				DE7E62D925A4E1A2002004BF /* CalculaMediaAPI.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		DE7E62DF25A5F3A7002004BF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DE7E62E025A5F3B5002004BF /* Pino.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DE7E62E225A620FF002004BF /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				DE7E62E325A6211A002004BF /* icon-app.png */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +252,7 @@
 			files = (
 				03AA175B1FC84154003CB2B8 /* LaunchScreen.storyboard in Resources */,
 				03AA17581FC84154003CB2B8 /* Assets.xcassets in Resources */,
+				DE7E62E425A6211A002004BF /* icon-app.png in Resources */,
 				03AA17531FC84154003CB2B8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,6 +265,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				03AA176D1FC8515A003CB2B8 /* AlunoViewController.swift in Sources */,
+				DE7E62E125A5F3B5002004BF /* Pino.swift in Sources */,
 				03AA17661FC84353003CB2B8 /* HomeTableViewController.swift in Sources */,
 				03AA17561FC84154003CB2B8 /* Agenda.xcdatamodeld in Sources */,
 				A281001A1FD5C2F700E1BDF1 /* ImagePicker.swift in Sources */,
@@ -250,6 +277,7 @@
 				DE7E62D725A4D7FB002004BF /* MapaViewController.swift in Sources */,
 				03AA174E1FC84154003CB2B8 /* AppDelegate.swift in Sources */,
 				DE7E62D325A4D367002004BF /* Localizacao.swift in Sources */,
+				DE7E62DE25A4F8EA002004BF /* AutenticacaoLocal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -391,7 +419,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = F64MFXX9M4;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Agenda/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = apps.Agenda;
@@ -406,7 +434,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = F64MFXX9M4;
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = Agenda/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = apps.Agenda;
